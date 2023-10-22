@@ -1,0 +1,141 @@
+/* App.css (or your CSS file) */
+
+/* Container for the entire page */
+.container {
+  display: flex;
+}
+
+/* Style for the "Search" component (drawer) */
+.search-container {
+  text-align: center;
+ margin: 70px;
+}
+
+.search-container,
+.row-section {
+  width: 89%; /* Adjust the percentage as needed */
+}
+.filters-drawer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-heading {
+  margin: 0;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.checkbox-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.location-select {
+  width: 150px;
+  padding: 5px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Users.css */
+
+.user-list-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next row if they don't fit in the container */
+  justify-content: space-between; /* Add space between items */
+  align-items: flex-start; /* Align items at the top of each row */
+  margin-left: 70px;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px; /* Adjust the width as needed */
+}
+
+.user-details {
+  flex: 1; /* Take up the remaining space in the user-item */
+}
+
+.user-price {
+  text-align: right;
+}
+
+.select-box {
+  width: 150px; /* Adjust the width as needed */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  color: #333;
+  /* Add more styles as needed */
+}
+/* Add any other styles you need for your components here */
+
+.range-slider {
+  width: 100%;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #007BFF;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px;
+}
+
+.range-value-marker {
+  text-align: center;
+  margin-top: 8px;
+  color: #007BFF;
+}
